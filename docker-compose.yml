@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_mini_blog
+    environment:
+      MYSQL_DATABASE: mini_blog
+      MYSQL_ROOT_PASSWORD: password # Ton mot de passe
+    ports:
+      - "3307:3307" # Relie le port du conteneur à ton PC
